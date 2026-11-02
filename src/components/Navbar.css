@@ -1,0 +1,74 @@
+/* Contenedor principal del Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Marca / Título del Navbar */
+.navbar-brand h1 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Lista de navegación */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Enlaces del menú */
+.navbar-menu li a {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Efecto hover al pasar el cursor */
+.navbar-menu li a:hover {
+  color: #3182ce;
+  background-color: #ebf8ff;
+}
+
+/* --- Diseño Responsivo para Celulares --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-menu {
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-menu li a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
