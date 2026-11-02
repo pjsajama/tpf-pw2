@@ -23,9 +23,9 @@ function Contact() {
     e.preventDefault();
     setStatus('sending'); // Muestro "Enviando..." inmediatamente
 
-    const SERVICE_ID = 'service_xdxaqd4';
-    const TEMPLATE_ID = 'template_uk3674o';
-    const PUBLIC_KEY = 'enCJ5q933DobVphzb';
+    const SERVICE_ID = 'service_87uvj1k';
+    const TEMPLATE_ID = 'template_ng1z8nz';
+    const PUBLIC_KEY = 'R2gFla33Cwe2afVOk';
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
